@@ -1,4 +1,4 @@
-/* import 'package:flutter_onboarding/pages/home/home_page.dart';
+import 'package:flutter_onboarding/pages/home/home_page.dart';
 import 'package:flutter_onboarding/pages/login/login_page.dart';
 import 'package:flutter_onboarding/pages/signup/signup_page.dart';
 import 'package:flutter_onboarding/pages/splash/splash.dart';
@@ -21,4 +21,3 @@ final routes = {
   // '/profile': (context) => ProfilePage(),
   // '/recover-password': (context) => RecoverPasswordPage(),
 };
-*/
