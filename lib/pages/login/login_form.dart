@@ -46,11 +46,11 @@ class _LoginFormState extends State<LoginForm> {
                     children: <Widget>[
                       Spacer(),
                       TextFormField(
-                        decoration: InputDecoration(labelText: 'username'),
+                        decoration: InputDecoration(labelText: 'Email'),
                         controller: _emailController,
                       ),
                       TextFormField(
-                        decoration: InputDecoration(labelText: 'password'),
+                        decoration: InputDecoration(labelText: 'Password'),
                         controller: _passwordController,
                         obscureText: true,
                       ),
@@ -59,7 +59,7 @@ class _LoginFormState extends State<LoginForm> {
                           text: new TextSpan(
                             children: [
                               new TextSpan(
-                                text: '¿Olvidaste tu contraseña?',
+                                text: 'Forgot your password?',
                                 style: new TextStyle(color: Colors.blue),
                                 recognizer: new TapGestureRecognizer()
                                   ..onTap = () {
@@ -84,11 +84,11 @@ class _LoginFormState extends State<LoginForm> {
                           text: new TextSpan(
                             children: [
                               new TextSpan(
-                                text: '¿No tienes cuenta?  ',
+                                text: "Don't have account?  ",
                                 style: new TextStyle(color: Colors.black),
                               ),
                               new TextSpan(
-                                text: 'Regístrate',
+                                text: 'Sign Up',
                                 style: new TextStyle(color: Colors.blue),
                                 recognizer: new TapGestureRecognizer()
                                   ..onTap = () {
@@ -115,65 +115,6 @@ class _LoginFormState extends State<LoginForm> {
                 )
               ],
             ),
-            /* child: Column(
-              children: <Widget>[
-                Spacer(),
-                TextFormField(
-                  decoration: InputDecoration(labelText: 'username'),
-                  controller: _emailController,
-                ),
-                TextFormField(
-                  decoration: InputDecoration(labelText: 'password'),
-                  controller: _passwordController,
-                  obscureText: true,
-                ),
-                RaisedButton(
-                  onPressed:
-                  state is! LoginLoading ? _onLoginButtonPressed : null,
-                  child: Text('Login'),
-                ),
-                /* Row(
-                  children: <Widget>[
-                    Spacer(),
-                    const Text('¿No tienes cuenta? '),
-                    RaisedButton(
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/signup');
-                      },
-                      child: Text('Regístrate!'),
-                    ),
-                    Spacer(),
-                  ]
-                ), */
-                new Center(
-                  child: new RichText(
-                    text: new TextSpan(
-                      children: [
-                        new TextSpan(
-                          text: '¿No tienes cuenta?  ',
-                          style: new TextStyle(color: Colors.black),
-                        ),
-                        new TextSpan(
-                          text: 'Regístrate',
-                          style: new TextStyle(color: Colors.blue),
-                          recognizer: new TapGestureRecognizer()
-                            ..onTap = () {
-                              Navigator.pushNamed(context, '/signup');
-                              // launch('https://docs.flutter.io/flutter/services/UrlLauncher-class.html');
-                            },
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Spacer(),
-                Container(
-                  child: state is LoginLoading
-                      ? CircularProgressIndicator()
-                      : null,
-                ),
-              ],
-            ), */
           );
         },
       ),
