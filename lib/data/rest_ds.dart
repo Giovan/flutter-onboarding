@@ -5,7 +5,7 @@ import 'package:flutter_onboarding/models/user.dart';
 
 class RestDatasource {
   NetworkUtil _netUtil = new NetworkUtil();
-  static final BASE_URL = "https://varopago-v2-backend-qa.herokuapp.com";
+  static final BASE_URL = "https://";
   static final LOGIN_URL = BASE_URL + "/auth/login";
   static final _API_KEY = "";
 
